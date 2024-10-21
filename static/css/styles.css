@@ -1,0 +1,217 @@
+/* Global Styles */
+body {
+    font-family: 'Ubuntu', sans-serif; /* Use Ubuntu with sans-serif fallback */
+    background-color: #f5f5f5; /* Light neutral tone */
+    color: #333; /* Text color for better readability */
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Ubuntu', sans-serif; /* Consistent use of Ubuntu for headings */
+    color: #003366; /* Primary deep blue for headings */
+}
+
+/* Header */
+header {
+    background-color: #003366; /* Deep blue */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+header .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFD700; /* Soft yellow for logo text */
+}
+
+header .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 0.75rem;
+    color: #FFFFFF;
+    transition: color 0.3s ease;
+}
+
+header .navbar-nav .nav-link:hover {
+    color: #FFD700; /* Soft yellow hover effect */
+}
+
+header form .form-control {
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #FFD700; /* Soft yellow border for search bar */
+}
+
+header form .btn {
+    background-color: #FFD700;
+    color: #003366;
+    border-radius: 25px;
+    padding: 0.5rem 1.2rem;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #003366;
+    color: #FFFFFF;
+    padding: 5rem 0;
+    text-align: center;
+    background-image: url("{% static 'images/hero_background.jpg' %}"); /* Optional background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p.lead {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn-warning {
+    background-color: #FFD700;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn-warning:hover {
+    background-color: #e6b800; /* Slightly darker yellow on hover */
+}
+
+.hero .btn-outline-light {
+    border: 2px solid #FFD700;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    color: #FFFFFF;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.hero .btn-outline-light:hover {
+    border-color: #e6b800;
+    color: #FFD700;
+}
+
+/* Main Content */
+.container h2 {
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 2rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #FFFFFF; /* Ensure cards stand out against the light background */
+}
+
+.card img {
+    border-bottom: 2px solid #FFD700; /* Accent color for images */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card .btn-primary {
+    background-color: #003366;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn-primary:hover {
+    background-color: #001f4d; /* Darker blue on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: #FFFFFF;
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 5px solid #FFD700; /* Accent border at top of footer */
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    header form .form-control, header form .btn {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p.lead {
+        font-size: 1.2rem;
+    }
+
+    .container h2 {
+        font-size: 2rem;
+    }
+
+    .card .card-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* Primary Color (Deep Blue) */
+.bg-primary {
+    background-color: #003366 !important; /* Custom Deep Blue */
+    color: #FFFFFF !important; /* Ensure text is readable */
+}
+
+.btn-primary {
+    background-color: #003366 !important; /* Custom Deep Blue for buttons */
+    border-color: #003366 !important;
+}
+
+.btn-primary:hover {
+    background-color: #001f4d !important; /* Darker blue on hover */
+    border-color: #001f4d !important;
+}
+
+/* Accent Color (Soft Yellow) */
+.btn-warning, .bg-warning {
+    background-color: #FFD700 !important; /* Custom Soft Yellow */
+    border-color: #FFD700 !important;
+    color: #003366 !important; /* Ensure contrast with yellow */
+}
+
+.btn-warning:hover {
+    background-color: #e6b800 !important; /* Darker yellow on hover */
+    border-color: #e6b800 !important;
+}
+
+/* Other Bootstrap Utility Class Overrides */
+.text-primary {
+    color: #003366 !important; /* Custom text color for primary */
+}
+
+.text-warning {
+    color: #FFD700 !important; /* Custom text color for warning */
+}
+
+.border-primary {
+    border-color: #003366 !important;
+}
+
+.border-warning {
+    border-color: #FFD700 !important;
+}
