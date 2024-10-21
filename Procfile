@@ -1,0 +1,1 @@
+web: gunicorn adaze_connect.wsgi --log-file -
